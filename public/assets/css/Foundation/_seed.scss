@@ -1,0 +1,79 @@
+@for $i from 1 through 10 {
+    .mt_#{$i} {
+        margin-top: #{$i}px;
+    }
+
+    .mb_#{$i} {
+        margin-bottom: #{$i}px;
+    }
+
+    .ml_#{$i} {
+        margin-left: #{$i}px;
+    }
+
+    .mr_#{$i} {
+        margin-right: #{$i}px;
+    }
+
+    .my_#{$i} {
+        margin-top: #{$i}px;
+        margin-bottom: #{$i}px;
+    }
+
+    .mx_#{$i} {
+        margin-left: #{$i}px;
+        margin-right: #{$i}px;
+    }
+
+    .pt_#{$i} {
+        padding-top: #{$i}px;
+    }
+
+    .pb_#{$i} {
+        padding-bottom: #{$i}px;
+    }
+
+    .pl_#{$i} {
+        padding-left: #{$i}px;
+    }
+
+    .pr_#{$i} {
+        padding-right: #{$i}px;
+    }
+
+    .py_#{$i} {
+        padding-top: #{$i}px;
+        padding-bottom: #{$i}px;
+    }
+
+    .px_#{$i} {
+        padding-left: #{$i}px;
+        padding-right: #{$i}px;
+    }
+
+    .fs_#{$i} {
+        font-size: #{$i}px !important;
+    }
+}
+
+:root {
+    @each $key,
+    $value in $colors {
+        --#{$key} :#{$value};
+    }
+}
+
+@each $key,
+$value in $colors {
+    .bg_#{$key} {
+        background: #{$value} !important;
+    }
+
+    .text_#{$key} {
+        color: #{$value} !important;
+    }
+
+    .border_#{$key} {
+        border-color: #{$value} !important;
+    }
+}

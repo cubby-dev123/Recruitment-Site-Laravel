@@ -1,0 +1,107 @@
+.app-brand-logo {
+   padding: 10px 0;
+}
+
+.app-brand-logo img {
+   width: 60%;
+}
+
+.app-brand-text.demo {
+   font-size: 0.8rem;
+   margin-left: -35px;
+   text-align: center;
+   line-height: 1.2;
+}
+
+.csv-check {
+   display: flex;
+   align-items: center;
+   margin-left: 20px;
+}
+
+.tar-img {
+   text-align: center;
+   cursor: pointer;
+}
+#btn_group {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 2rem;
+   margin: 2rem 0;
+}
+.upload-card {
+   padding:30px 50px;
+}
+.upload-card .upload-part {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5%;
+   padding: 0 10%;
+}
+.upload-card .upload-part-modal {
+   padding: 0 3%;
+}
+
+.upload-card .upload-part .upload-img {
+   width: 200px;
+   height: 200px;
+   cursor: pointer;
+   text-align: center;
+   margin-top: 50px;
+}
+.upload-card .upload-part-modal .upload-img {
+   width: 180px;
+   height: 180px;
+   cursor: pointer;
+   text-align: center;
+}
+.upload-card .upload-part .upload-img .cancel-upload {
+   padding: 5px 20px;
+   background-color: #FF0000;
+   border: none;
+   color: #FFF;
+   display: none;
+   width: 100%;
+   margin: auto;
+   margin-top: 10px;
+}
+.upload-card .upload-part .upload-img .img-item, .upload-card .upload-part .upload-img .img-item img {
+   width: 100%;
+   height: 100%;
+}
+.upload-card .upload-part .upload-img .img-item img {
+   object-fit: cover;
+}
+#upload-txt {
+   text-align: center;
+   margin-top: 50px;
+   font-weight: 700;
+}
+
+
+ @media only screen and (max-width: 768px) {
+   .upload-card {
+      padding:20px;
+   }
+   .upload-card .upload-part {
+      gap: 3%;
+      padding: 0 7%;
+   }
+   .upload-card .upload-part .upload-img {
+      width: 120px;
+      height: 120px;
+   }
+   .upload-card .upload-part-modal {
+      padding: 0 5%;
+   }
+   .upload-card .upload-part-modal .upload-img {
+      width: 160px;
+      height: 160px;
+   }
+ }
+
+ #new_info {
+   margin-top: 50px;
+ }

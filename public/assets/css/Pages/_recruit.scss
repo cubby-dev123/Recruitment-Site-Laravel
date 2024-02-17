@@ -1,0 +1,110 @@
+.page-title {
+   padding-bottom: 0;
+}
+//sec0001 
+.sec0001 {
+   margin-top: 97rem;
+   display: flex;
+   justify-content: center;   
+   align-items: center;
+   gap: 40rem;
+   @include media ("sp") {
+      flex-direction: column;
+
+   }
+   .message {
+      .message-title {
+         font-size: 16rem;
+         color: #077B90;
+         @include media ("sp") {
+            font-size: 30rem;
+         }
+      }
+      .message-content {
+         margin-top: 20rem;
+      }
+   }
+   .image-part {
+      width: 40%;
+      @include media ("sp") {
+         width: 100%;
+      }
+   }
+}
+
+//sec0002 
+.sec0002 {
+   margin-top: 60rem;
+   background-color: #F1F1F1;
+   padding: 115rem 0 70rem;
+   .wrap {
+      .container {
+         position: relative;
+         background-color: #FFF;
+         padding: 37rem 53rem 150rem 49rem;
+         .item {
+            .content-item {
+               margin-top: 40rem;
+               table, tr, td{
+                  border: 2rem solid #E6E6E6;
+                  border-collapse: collapse;
+               }
+               table {
+                  width: 100%;
+                  tr {
+                     height: 80rem;
+                     ._ca {
+                        width: 25%;
+                        padding: 30rem;
+                        font-size: 16rem;
+                        text-align: center;
+                        background-color: #F2F2F2;
+                        @include media ("sp") {
+                           font-size: 25rem;
+                           padding: 30rem 5rem;
+                        }
+                     }
+                     ._cd {
+                        padding-left: 35rem;                    
+                     }
+                  }
+               }
+            }
+         }
+         .item-2 {
+            margin-top: 100rem;
+         }
+         .bid {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 60rem;
+            @include media ("sp") {
+
+            }
+            .bid-btn {
+                 font-family: 'KozGoPr6N-Bold';
+                 font-size: 16rem;
+                 color: #FFF;
+                 padding: 12rem 34rem;
+                 background-color: #00AFD0;
+                 border: 1rem solid #00AFD0;
+                 border-radius: 8.5rem;
+                 box-shadow: 4.3rem 4.3rem 3.2rem rgba($color: #000000, $alpha: .3);
+                 transition: all .3s;
+                 &:hover {
+                   background-color: #FFF;
+                   border: 1rem solid #00AFD0;
+                   color: #00AFD0;
+                   box-shadow: 4.3rem 4.3rem 3.2rem rgba($color: #00AFD0, $alpha: .3);
+                 }
+                 @include media ("sp") {
+                      padding: 12rem 50rem;
+                      font-size: 25rem;
+                 }
+            }
+       }
+      }
+   }
+}
+

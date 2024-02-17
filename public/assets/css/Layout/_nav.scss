@@ -1,0 +1,58 @@
+#menu {
+     width: 100%;
+     height: 100vh;
+     background-color: rgba(0, 0, 0, 0.8);
+     color: #FFF;
+     position: fixed;
+     top: 0;
+     right: -100%;
+     transition: all 0.5s;
+     z-index: 998;
+     overflow-y: scroll;
+     ul {
+        font-size: 50rem;
+        line-height: 2;
+        width: 75%;
+        margin: auto;
+        margin-top: 350rem;
+        li {
+          margin-top: 30rem;
+        }
+        .nav-login {
+          margin-top: 150rem;
+          border: 1rem solid #FFF;
+          border-radius: 130rem;
+          width: calc(100% - 10vw);
+          padding: 15rem 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          &::after {
+               content: "";
+               width: 0;
+               height: 1rem;
+               background-color: #FFF;
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               animation: lineAnimation 2s infinite;
+          }
+          @keyframes lineAnimation {
+               0% {
+                    width: 0;
+                    right: 25rem;
+               }
+               100% {
+                    width: 100rem;
+                    right: -75rem;
+               }
+          }
+        }
+     }
+   
+     &.active {
+       right: 0;
+     }
+   }
+   

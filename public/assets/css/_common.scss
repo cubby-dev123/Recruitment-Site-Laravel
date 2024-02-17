@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'KozGoPr6N-Regular';
+    src: url(../font/KozGoPr6N-Regular.otf);
+}
+@font-face {
+    font-family: 'KozGoPr6N-Bold';
+    src: url(../font/KozGoPr6N-Bold.otf);
+}
+@font-face {
+    font-family: 'A-OTF Gothic MB101 Pro B';
+    src: url(../font/A-OTF\ Gothic\ MB101\ Pro\ B.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: (100vw / 1920);
+  @include media ("sp") {
+    font-size: (100vw / 768);
+  }
+}
+
+body {
+    font-size: 14rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'KozGoPr6N-Regular';
+    @include media ("sp") {
+        font-size: 25rem;
+    }
+}
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrap {
+    width: calc(100% - 670rem);
+    margin: auto;
+    @include media ("sp") {
+        width: calc(100% - 100rem);
+    }
+}
+
+.wrapper {
+    width: calc(100% - 772rem);
+    margin: auto;
+    @include media ("lb") {
+        width: calc(100% - 500rem);
+    }
+    @include media ("tb") {
+        width: calc(100% - 150rem);
+    }
+    @include media ("sp") {
+        width: calc(100% - 100rem);
+    }
+}
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18rem;
+    @include media ("sp") {
+        gap: 20rem;
+    }
+    .main-icon {
+         width: 21rem;
+         height: 28rem;
+         @include media ("sp") {
+            width: 35rem;
+            height: 40rem;
+         }
+    }
+    .txt {
+         font-family: 'KozGoPr6N-Bold';
+         font-size: 18rem;
+         @include media ("sp") {
+            font-size: 35rem;
+         }
+    }
+ 
+}
+
+.page-title {
+    padding: 125rem 0 38.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+ }
+ 
+.stalker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    mix-blend-mode: exclusion;
+    z-index: 99999;
+}

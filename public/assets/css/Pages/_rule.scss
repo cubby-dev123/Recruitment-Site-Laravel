@@ -1,0 +1,78 @@
+.sub-title {
+   margin-top: 20rem;
+   text-align: center;
+}
+.content {
+   margin-top: 90rem;
+   line-height: 2.5;
+   ._txt02 {
+      margin: 30rem 0;
+      @include media ("sp") {
+         margin: 50rem 0;
+      }
+      .item {
+         span {
+            font-size: 16rem;
+            color: #077B90;
+            @include media ("sp") {
+               font-size: 30rem;
+            }
+         }
+         .indent-txt {
+            font-size: 14rem;
+            color: #000;
+            text-indent: 24rem;
+            display: inline-block;
+            @include media ("sp") {
+               font-size: 25rem;
+               text-indent: 0;
+               display: inline;
+            }
+         }
+      }
+   }
+}
+.btn-part {
+   margin-top: 80rem;
+   margin-bottom: 300rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 70rem;
+   @include media ("sp") {
+      margin-bottom: 150rem;
+   }
+   .agree-btn, .disagree-btn {
+      font-family: 'KozGoPr6N-Bold';
+      font-size: 16rem;
+      color: #FFF;
+      padding: 12rem 34rem;
+      background-color: #00AFD0;
+      border: 1rem solid #00AFD0;
+      border-radius: 8.5rem;
+      box-shadow: 4.3rem 4.3rem 3.2rem rgba($color: #000000, $alpha: .3);
+      transition: all .3s;
+      &:hover {
+        background-color: #FFF;
+        border: 1rem solid #00AFD0;
+        color: #00AFD0;
+        box-shadow: 4.3rem 4.3rem 3.2rem rgba($color: #00AFD0, $alpha: .3);
+      }
+      @include media ("sp") {
+           padding: 12rem 50rem;
+           font-size: 25rem;
+      }
+   }
+   .disagree-btn {
+      background-color: #989898;
+      border: 1rem solid #989898;
+      padding: 12rem 25rem;
+      &:hover {
+         background-color: #FFF;
+         border: 1rem solid #989898;
+         color: #989898;
+        box-shadow: 4.3rem 4.3rem 3.2rem rgba($color: #989898, $alpha: .3);
+
+      }
+   }
+}

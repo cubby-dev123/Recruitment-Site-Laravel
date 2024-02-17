@@ -1,0 +1,411 @@
+//sec fv
+.fv {
+     width: 100%;
+     height: 55.74vh;
+     position: relative;
+     @include media ("sp") {
+          height: 100vh;
+     }
+     .fv-img {
+          width: 100%;
+          height: 100%;
+          img {
+             height: 100%;
+          }
+     }
+     .fv-txt {
+          font-family: 'A-OTF Gothic MB101 Pro B';
+          font-size: 60rem;
+          text-align: center;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 25%;
+          letter-spacing: 10rem;
+          @include media ("sp") {
+               width: 100%;
+               font-size: 50rem;
+          }
+          span {
+               display: block;
+               color: #077B90;
+          }
+     }
+}
+
+//sec01 
+.sec01 {
+     background-color: #F1F1F1;
+     padding: 53rem 0;
+     .container {
+          background-color: #FFF;
+          padding: 38rem 51rem;
+          @include media ("sp") {
+               padding: 50rem;
+          }
+          .container01 {
+               display: flex;
+               gap: 20rem;
+               align-items: flex-start;
+               @include media ("sp") {
+                    flex-direction: column;
+               }
+               .address-search {
+                    .content {
+                         margin-top: 20rem;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: flex-start;
+                         align-items: flex-start;
+                         gap: 10rem;
+                         position: relative;
+                         @include media ("sp") {
+                              margin-top: 30rem;
+                              gap: 30rem;
+                         }
+                         .map {
+                              width: 264rem;
+                              height: 400rem;
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                              @include media ("sp") {
+                                   width: 500rem;
+                                   height: 650rem;
+                              }
+                         }
+                         .item {
+                              display: flex;
+                              align-items: center;
+                              gap: 9.5rem;
+                              @include media ("sp") {
+                                   gap: 20rem;
+                                   flex-direction: column;
+                                   align-items: flex-start;
+                              }
+                              .parent {
+                                   width: 90rem;
+                                   font-family: 'KozGoPr6N-Bold';
+                                   font-size: 16rem;
+                                   color: #FFF;
+                                   @include media ("sp") {
+                                        width: 100%;
+                                        font-size: 30rem;
+                                   }
+                              }
+                              .children {
+                                   width: 460rem;
+                                   @include media ("sp") {
+                                        width: 560rem;
+                                        padding: 10rem;
+                                   }
+                                   a {
+                                        position: relative;
+                                        letter-spacing: 1rem;
+                                        margin-right: 5rem;
+                                        @include media ("sp") {
+                                             margin-right: 20rem;
+                                             border-bottom: 1rem solid #000;
+                                        }
+                                        &:not(:last-child):after {
+                                             content: "";
+                                             width: 1rem;
+                                             height: 17rem;
+                                             position: absolute;
+                                             top: 50%;
+                                             transform: translateY(-50%);
+                                             right: -9.5%;
+                                             background-color: #000;
+                                             @include media ("sp") {
+                                                  display: none;
+                                             }
+                                        }
+                                   }
+                              }
+                         }
+                         .item01 {
+                              border: 2rem solid #173E5D;
+                              .parent {
+                                   background-color: #173E5D;
+                                   padding: 9.3rem 28rem 9.3rem;
+                                   @include media ("sp") {
+                                        padding: 10rem;
+                                   }
+                              }
+                         }
+                         .item02 {
+                              border: 2rem solid #A1C2D6;
+                              .parent {
+                                   background-color: #A1C2D6;
+                                   padding: 44rem 28rem;
+                                   @include media ("sp") {
+                                        padding: 10rem;
+                                   }
+                              }
+                         }
+                         .item03 {
+                              border: 2rem solid #ABBD33;
+                              .parent {
+                                   background-color: #ABBD33;
+                                   padding: 9.3rem 28rem 9.3rem;
+                                   @include media ("sp") {
+                                        padding: 10rem;
+                                   }
+                              }
+                         }
+                         .item04 {
+                              border: 2rem solid #E7883E;
+                              .parent {
+                                   background-color: #E7883E;
+                                   padding: 19rem 28rem;
+                                   @include media ("sp") {
+                                        padding: 10rem;
+                                   }
+                              }
+                         }
+                         .item05 {
+                              border: 2rem solid #F1BE5A;
+                              .parent {
+                                   background-color: #F1BE5A;
+                                   padding: 19rem 28rem;
+                                   @include media ("sp") {
+                                        padding: 10rem;
+                                   }
+                              }
+                         }
+                         .item06 {
+                              border: 2rem solid #A73124;
+                              .parent {
+                                   background-color: #A73124;
+                                   padding: 9.3rem 28rem 9.3rem;
+                                   @include media ("sp") {
+                                        padding: 10rem;
+                                   }
+                              }
+                         }
+                    }     
+               }
+               .degree-search {
+                    @include media ("sp") {
+                         margin-top: 50rem;
+                    }
+                    .title {
+                         margin-left: 10rem;
+                         @include media ("sp") {
+                              margin-left: 0;
+                         }
+                    }
+                    .content {
+                         margin-top: 20rem;
+                         display: flex;
+                         justify-content: center;
+                         flex-wrap: wrap;
+                         gap: 10rem;
+                         @include media ("sp") {
+                              margin-top: 30rem;
+                              gap: 30rem;
+                         }
+                         .item {
+                              width: 170rem;
+                              height: 170rem;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                              background-color: #FFF;
+                              border: 3rem solid #00AFD0;
+                              box-shadow: 4rem 4rem 3rem rgba($color: #000000, $alpha: .3);
+                              border-radius: 10rem;
+                              @include media ("sp") {
+                                   width: 260rem;
+                                   height: 260rem;
+                                   border-radius: 30rem;
+                              }
+                              .item-icon {
+                                   width: 45rem;
+                                   height: 45rem;
+                                   @include media ("sp") {
+                                        width: 90rem;
+                                        height: 90rem;
+                                   }
+                              }
+                              .check-icon {
+                                   width: 40rem;
+                                   height: 45rem;
+                                   @include media ("sp") {
+                                        width: 80rem;
+                                        height: 90rem;
+                                   }
+                              }
+                              .risk-icon {
+                                   width: 50rem;
+                                   height: 40rem;
+                                   @include media ("sp") {
+                                        width: 100rem;
+                                        height: 80rem;
+                                   }
+                              }
+                              .car-icon {
+                                   width: 70rem;
+                                   height: 40rem;
+                                   @include media ("sp") {
+                                        width: 140rem;
+                                        height: 80rem;
+                                   }
+                              }
+                              .item-txt {
+                                   font-size: 16rem;
+                                   margin-top: 10rem;
+                                   text-align: center;
+                                   line-height: 1.2;
+                                   @include media ("sp") {
+                                        font-size: 25rem;
+                                        margin-top: 20rem;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+          .container02 {
+               margin-top: 50rem;
+               .content {
+                    margin-top: 20rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 18rem;
+                    @include media ("sp") {
+                         margin-top: 30rem;         
+                         gap: 25rem;
+                    }
+                    .item {
+                         font-size: 16rem;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         display: block;
+                         background-color: #FFF;
+                         border: 1rem solid #CBCBCB;
+                         border-radius: 8rem;
+                         box-shadow: 4rem 4rem 3rem rgba($color: #000000, $alpha: .3);
+                         padding: 10rem 25rem;
+                         @include media ("sp") {
+                              font-size: 25rem;    
+                              padding: 10rem 30rem;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+//sec02 
+.sec02 {
+     margin-top: 80rem;
+     margin-bottom: 100rem;
+     padding-bottom: 100rem;
+     position: relative;
+     .title {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5rem;
+     }
+     .content {
+          margin-top: 10rem;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .content-item {
+               margin-top: 50rem;
+               @include media ("sp") {
+                    width: 100%;
+               }
+               a {
+                    .item-txt {
+                         margin-top: 16rem;
+                         .company {
+                              font-size: 16rem;
+                              color: #077B90;
+                              @include media ("sp") {
+                                   font-size: 30rem;
+                              }
+                         }
+                         .message {
+                              margin-top: 16rem;
+                         }
+                         .address {
+                              margin-top: 20rem;
+                              display: flex;
+                              align-items: flex-start;
+                              gap: 11rem;
+                              @include media ("sp") {
+                               gap: 20rem;
+                              }
+                              .address-icon {
+                                   width: 20rem;
+                                   height: 28rem;
+                                   @include media ("sp") {
+                                     width: 30rem;
+                                     height: 48rem;
+                                   }
+                              }
+                         }
+                         .salary {
+                              margin-top: 12.5rem;
+                              display: flex;
+                              align-items: flex-start;
+                              gap: 9rem;
+                              @include media ("sp") {
+                                  gap: 20rem;
+                              }
+                              .salary-icon {
+                                   width: 21rem;
+                                   height: 23rem;
+                                   @include media ("sp") {
+                                     width: 31rem;
+                                     height: 33rem;
+                                   }
+                              }
+                         }
+                         .degree {
+                              margin-top: 30rem;
+                         }
+                    }
+               }
+          }
+     }
+     .view {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          @include media ("sp") {
+               bottom: -10rem;
+          }
+          .view-btn {
+               font-family: 'KozGoPr6N-Bold';
+               font-size: 16rem;
+               color: #FFF;
+               padding: 12rem 34rem;
+               background-color: #00AFD0;
+               border: 1rem solid #00AFD0;
+               border-radius: 8.5rem;
+               box-shadow: 4.3rem 4.3rem 3.2rem rgba($color: #000000, $alpha: .3);
+               transition: all .3s;
+               &:hover {
+                 background-color: #FFF;
+                 border: 1rem solid #00AFD0;
+                 color: #00AFD0;
+                 box-shadow: 4.3rem 4.3rem 3.2rem rgba($color: #00AFD0, $alpha: .3);
+               }
+               @include media ("sp") {
+                    padding: 12rem 50rem;
+                    font-size: 25rem;
+               }
+          }
+     }
+}

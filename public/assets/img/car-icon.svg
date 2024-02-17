@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70.945" height="39.562" viewBox="0 0 70.945 39.562">
+  <g id="car-icon" transform="translate(-1411.831 -983)">
+    <rect id="Rectangle_38" data-name="Rectangle 38" width="49.009" height="25.523" transform="translate(1433.766 983)" fill="#00afd0"/>
+    <path id="Path_113" data-name="Path 113" d="M1431.73,1014.632h-19.9v-8.146l4.422-15.341h15.477Z" fill="#00afd0"/>
+    <rect id="Rectangle_39" data-name="Rectangle 39" width="49.009" height="3.937" transform="translate(1433.766 1010.695)" fill="#00afd0"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="4.819" cy="4.819" r="4.819" transform="translate(1417.184 1015.747) rotate(-45)" fill="#00afd0"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="4.819" cy="4.819" r="4.819" transform="translate(1465.91 1015.299) rotate(-41.226)" fill="#00afd0"/>
+    <path id="Path_114" data-name="Path 114" d="M1417.2,1010.7a1.528,1.528,0,1,1-1.528-1.493A1.51,1.51,0,0,1,1417.2,1010.7Z" fill="#fff"/>
+    <path id="Path_115" data-name="Path 115" d="M1429.422,1004.26h-14.4l3.219-10.811h11.183Z" fill="#fff"/>
+  </g>
+</svg>

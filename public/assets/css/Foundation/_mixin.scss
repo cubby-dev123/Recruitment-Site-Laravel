@@ -1,0 +1,22 @@
+//メディアクエリをmixin化
+$breakpoints: (
+  'sp': 'only screen and (max-width: 768px)', 
+  'tb': 'print,screen and (max-width: 991px)', 
+  'tc': 'print,screen and (min-width: 992px)', 
+  'lb': 'print,screen and (max-width: 1280px)', 
+  'lc': 'print,screen and (min-width: 1281px)',
+  'max': 'print,screen and (max-width: 1700px)', 
+  'min': 'print,screen and (min-width: 1701px)', 
+  'full': 'print,screen and (max-width: 1920px)', 
+  'pc': 'print,screen and (min-width: 769px)' , 
+
+  'cst_hd_nav': 'print,screen and (max-width: 1370px)' , 
+  'header_mobile': 'print,screen and (max-width: 969px)' , 
+
+) !default;
+
+@mixin media($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

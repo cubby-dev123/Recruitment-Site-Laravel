@@ -1,0 +1,92 @@
+footer {
+  //  margin-top: 100rem;
+   .footer01 {
+      background-color: #00AFD0;
+      padding: 25rem 0;
+      @include media ("sp") {
+         padding-top: 50rem;
+         padding-bottom: 100rem;
+      }
+      .wrap {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         @include media ("sp") {
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+         }
+         .header-logo {
+           width: 432rem;
+           transition: all .3s;
+           &:hover {
+             opacity: .8;
+           }
+         }
+         .right {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 38.8rem;
+           color: #FFF;
+           @include media ("sp") {
+            position: absolute;
+            right: 0;
+            bottom: -70rem;
+           }
+           .menu-part {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             gap: 25rem;
+             .menu-item {
+               position: relative;
+               &::before {
+                 content: "";
+                 width: 0;
+                 height: 2rem;
+                 background-color: #FFF;
+                 position: absolute;
+                 left: 0;
+                 bottom: 0;
+                 transition: all .3s;
+               }
+               &:hover {
+                 &::before {
+                   width: 100%;
+                 }
+               }
+               &:not(:last-child)::after {
+                 content: "";
+                 width: 1rem;
+                 height: 17rem;
+                 background: #FFF;
+                 position: absolute;
+                 top: 50%;
+                 transform: translateY(-50%);
+                 right: -30%;
+                 @include media ("sp") {
+                  right: -15%;
+                  height: 30rem;
+                 }
+               }
+             }
+             @include media ("sp") {
+
+             }
+           }
+         }
+       }
+   }
+   .footer02 {
+      background-color: #077B90;
+      font-size: 10rem;
+      color: #FFF;
+      text-align: center;
+      padding: 10rem 0;
+      @include media ("sp") {
+         font-size: 20rem;
+         padding: 20rem 0;
+      }
+   }
+}

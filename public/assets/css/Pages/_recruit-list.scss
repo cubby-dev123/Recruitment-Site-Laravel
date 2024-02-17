@@ -1,0 +1,243 @@
+//sec001
+.sec001 {
+   background-color: #F1F1F1;
+   padding: 60rem 0;
+   margin-top: 40rem;
+   .box {
+      background-color: #FFF;
+      
+      .tab-list {
+         width: 100%;
+         list-style: none;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         margin-top: -92rem;
+         @include media ("sp") {
+            margin-top: -170rem;
+         }
+         .tab-item {
+            display: flex;      
+            justify-content: center;
+            align-items: center;
+            gap: 23.5rem;
+            transition: .3s;
+            width: 33%;
+            padding: 25rem 0;
+            background: #DBDBDB;
+            cursor: pointer;
+            border-top: 10rem solid #707070;
+            @include media ("sp") {
+               flex-direction: column;
+               gap: 10rem;
+               height: 200rem;
+            }
+            .tab-img {
+               width: 20rem;
+               height: 28rem;
+               @include media ("sp") {
+                  width: 30rem;
+                  height: 48rem;
+               }
+            }
+            .tab-txt {
+               font-size: 16rem;
+               @include media ("sp") {
+                  font-size: 25rem;
+                  text-align: center;
+               }
+            }
+         }
+       }
+       .tab-toggle {
+          width: 30%;
+          height: 80rem;
+          position: relative;
+          z-index: 99;
+          opacity: 0;
+          cursor: pointer;
+          @include media ("sp") {
+            height: 150rem;
+          }
+         }
+         .tab-container {
+            padding: 50rem 30rem; 
+            .tab-content {
+               display: none;
+               width: 100%;
+               justify-content: space-between;
+               align-items: flex-start;
+               @include media ("sp") {
+                  flex-direction: column;
+               }
+               ._left, ._right{
+                  width: 45%;
+                  @include media ("sp") {
+                     width: 100%;
+                  }
+                  .item {
+                     display: flex;
+                     align-items: flex-start;
+                     gap: 35rem;
+                     @include media ("sp") {
+                        gap: 20rem;
+                     }
+                     &:not(:first-child) {
+                        margin-top: 35rem;
+                     }
+                     ._bg {
+                        a {
+                           display: inline-block;
+                           width: 35rem;
+                           font-size: 16rem;
+                           @include media ("sp") {
+                              font-size: 30rem;
+                              width: 70rem;
+                           }
+                        }
+                     }
+                     ._sm {
+                        a {
+                           position: relative;
+                           margin-right: 5rem;
+                           @include media ("sp") {
+                              margin-right: 10rem;
+                              border-bottom: 1rem solid;
+                           }
+                           &::after {
+                              content: "";
+                              width: 1rem;
+                              height: 18rem;
+                              background: #000;
+                              position: absolute;
+                              top: 50%;
+                              transform: translateY(-50%);
+                              right: -5rem;
+                              @include media ("sp") {
+                                 display: none;
+                              }
+                           }
+                        }
+                        ._no {
+                           margin-right: 0;
+                           &::after {
+                              width: 0;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .tab-content1 {
+               justify-content: center;
+               gap: 30rem;
+               .item1 {
+                  position: relative;
+                  @include media ("sp") {
+                     border-bottom: 1rem solid;
+                  }
+                  &::after {
+                     content: "";
+                     width: 0;
+                     height: 2rem;
+                     position: absolute;
+                     left: 0;
+                     bottom: 0;
+                     background-color: #000;
+                     transition: all .5s;
+                  }
+                  &:hover {
+                     &::after {
+                       width: 100%;
+                     }
+                   }
+               }
+            }
+         }
+         .tab-toggle:nth-child(1):checked ~ .tab-list .tab-item:nth-child(1),
+         .tab-toggle:nth-child(2):checked ~ .tab-list .tab-item:nth-child(2), 
+         .tab-toggle:nth-child(3):checked ~ .tab-list .tab-item:nth-child(3) {
+            border-top: 10rem solid #00AFD0;
+            background-color: #FFF;
+         }
+          .tab-toggle:nth-child(1):checked ~ .tab-container .tab-content:nth-child(1),
+          .tab-toggle:nth-child(2):checked ~ .tab-container .tab-content:nth-child(2),
+          .tab-toggle:nth-child(3):checked ~ .tab-container .tab-content:nth-child(3) {
+            display: flex;
+          }
+   }
+}
+
+//sec002
+.sec002 {
+   .content {
+      margin-top: 60rem;
+      margin-bottom: 100rem;
+      .content-item {
+           margin-top: 60rem;
+           @include media ("sp") {
+              width: 100%;
+            }
+            a {
+               display: flex;
+               justify-content: flex-start ;
+               align-items: center;
+               gap: 50rem;
+               @include media ("sp") {
+                  flex-direction: column;
+                  align-items: flex-start;
+               }
+                .item-txt {
+                     .company {
+                          font-size: 16rem;
+                          color: #077B90;
+                          @include media ("sp") {
+                               font-size: 30rem;
+                          }
+                     }
+                     .message {
+                          margin-top: 16rem;
+                     }
+                     .address {
+                          margin-top: 20rem;
+                          display: flex;
+                          align-items: flex-start;
+                          gap: 11rem;
+                          @include media ("sp") {
+                           gap: 20rem;
+                          }
+                          .address-icon {
+                               width: 20rem;
+                               height: 28rem;
+                               @include media ("sp") {
+                                 width: 30rem;
+                                 height: 48rem;
+                               }
+                          }
+                     }
+                     .salary {
+                          margin-top: 12.5rem;
+                          display: flex;
+                          align-items: flex-start;
+                          gap: 9rem;
+                          @include media ("sp") {
+                              gap: 20rem;
+                          }
+                          .salary-icon {
+                               width: 21rem;
+                               height: 23rem;
+                               @include media ("sp") {
+                                 width: 31rem;
+                                 height: 33rem;
+                               }
+                          }
+                     }
+                     .degree {
+                          margin-top: 30rem;
+                     }
+                }
+           }
+      }
+   }
+}
