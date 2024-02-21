@@ -17,19 +17,29 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         $schedule->call(function () {
-            $expirePeriod = 60; 
-            $companies = Main::where('enter_date', '<=', now()->subDays($expirePeriod))->get();
+
+            $expirePeriod = 5; 
+            $companies = Main::where('enter_date', '<=', now()->subMinutes($expirePeriod))
+                  ->where('switch_input', '!=', 1)
+                  ->get();
 
             foreach ($companies as $company) {
-                $expirationDate = Carbon::parse($company->enter_date)->addDays($expirePeriod);
+                $expirationDate = Carbon::parse($company->enter_date)->addMinutes($expirePeriod);
 
-                // Check if it's time to send notification
-                if (now() >= $expirationDate) {
+                $notificationDate = $expirationDate->subMinutes(3);
+
+                if (now() >= $notificationDate) {
                     $this->sendExpirationNotification($company);
                 }
-                $company->delete();
+                else {
+                    $index = Main::find($company);
+                    if($index) {
+                        $index->delete();
+                    }
+                }
             }
-        })->daily();
+
+        })->everyMinute();
     }
 
     /**
@@ -43,7 +53,7 @@ class Kernel extends ConsoleKernel
         $mailData = [
             'companyName' => $company->c_name,
             'expired_user' => $company->c_member_email,
-            'expirationDate' => Carbon::parse($company->enter_date)->addDays(60)->format('Y-m-d'),
+            'expirationDate' => Carbon::parse($company->enter_date)->addMinutes(60)->format('Y-m-d'),
         ];
 
         Mail::to($company->c_member_email)->send(new CompanyExpiryNotification($mailData));
